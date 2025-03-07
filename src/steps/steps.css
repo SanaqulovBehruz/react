@@ -1,0 +1,109 @@
+.etapiRaboti {
+    margin-top: 30px;
+    padding: 50px;
+    font-family: sans-serif;
+}
+
+.etapiRaboti h1 {
+    /* font-family: "Gotham Pro"; */
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #131018;
+}
+
+.etapiRaboti .wrapper .circle-box {
+    padding: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.etapiRaboti .wrapper .circle-box .circle {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.etapiRaboti .wrapper .circle-box .icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.etapiRaboti .wrapper .circle-box .icon-wrapper .orange {
+    display: block;
+    width: 100%;
+}
+
+.etapiRaboti .wrapper .circle-box .icon-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+.etapiRaboti .wrapper .circle-box .arrow-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.etapiRaboti .wrapper .circle-box .arrow {
+    display: block;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.etapiRaboti .wrapper .circle-box h3 {
+    margin-top: 20px;
+    /* font-family: "Gotham Pro"; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #131018;
+}
+@media (max-width: 1024px) {
+    .etapiRaboti .wrapper .circle-box {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .etapiRaboti .wrapper .circle-box .circle {
+        width: 150px; 
+    }
+
+    .etapiRaboti .wrapper .circle-box .arrow {
+        width: 50%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .etapiRaboti {
+        padding: 30px; 
+    }
+
+    .etapiRaboti h1 {
+        text-align: center;
+        font-size: 28px; 
+    }
+
+    .etapiRaboti .wrapper .circle-box {
+        align-items: center;
+    }
+
+    .etapiRaboti .wrapper .circle-box .circle {
+        width: 100px; 
+    }
+
+    .etapiRaboti .wrapper .circle-box .arrow {
+        width: 30%; 
+    }
+
+    .etapiRaboti .wrapper .circle-box h3 {
+        font-size: 16px; 
+    }
+}

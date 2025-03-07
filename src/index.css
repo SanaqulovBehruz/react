@@ -1,0 +1,20 @@
+@import './steps/steps.css';
+@import './cansultation/cansultation.css';
+@import './clients/clients.css';
+@import './articles/articles.css';
+
+body {
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

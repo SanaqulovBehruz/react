@@ -1,0 +1,106 @@
+.consultation{
+    background: #F0F0F0;
+    padding: 30px 0px;
+}
+
+.consultation form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.consultation form input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.consultation form button {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.consultation form button:hover{
+    background: #ff7550;
+    transition: background 0.3s ease;
+}
+
+.consultation .consultation__info {
+    margin-top: 30px;
+}
+
+
+.consultation .consultation__info input[type="checkbox"] {
+    
+    display: none; 
+}
+
+.consultation .consultation__info input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 20px;
+}
+
+.consultation .consultation__info input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ff6347;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.consultation .consultation__info input[type="checkbox"]:checked + label:before {
+    background-color: #ff6347;
+    border-color: #ff6347;
+}
+
+.consultation .consultation__info input[type="checkbox"]:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    .consultation form {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .consultation form input {
+        width: 100%;
+    }
+
+    .consultation form button {
+        width: 100%; 
+    }
+
+    .consultation .consultation__info {
+        text-align: center; 
+    }
+
+    .consultation .consultation__info input[type="checkbox"] + label {
+        padding-left: 30px; 
+    }
+}

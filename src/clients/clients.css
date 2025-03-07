@@ -1,0 +1,87 @@
+.clients {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.clients .clients-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.clients .clients-container .img-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.clients h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.clients .clients-container img {
+    width: 85%;
+    height: 85%;
+}
+
+.clients .clients-container img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.clients button {
+    background: #F1573D66;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 11px 13px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.clients button:hover {
+    background: #ef7a6666;
+    transition: background 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1000px) {
+    .clients .clients-container .img-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 585px) {
+    .clients{
+        text-align: center;
+    }
+    .clients .clients-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+    }
+    .clients .clients-container .img-container{
+        grid-template-columns: 1fr;
+        align-self: center;
+        gap: 20px;
+    }
+    .clients .clients-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .clients h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+
+    .clients button {
+        padding: 8px 10px; 
+    }
+}
