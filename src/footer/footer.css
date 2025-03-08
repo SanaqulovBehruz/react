@@ -1,0 +1,85 @@
+.footer {
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer .footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+}
+.footer .footer-section .phone{
+    margin-top: 30px;
+    color: #131018;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 100%;
+}
+.footer .footer-section h2, .footer-section h3 {
+    margin-bottom: 10px;
+}
+.footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer .footer-section ul li {
+    margin-bottom: 5px;
+}
+.footer .footer-section ul li:hover{
+    color: #ff7550;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.footer .contacts h3{
+    text-align: right;
+}
+.footer .contacts p{
+    text-align: right;
+    margin: 10px 0;
+}
+.footer .contacts img {
+    width: 24px;
+    margin-right: 5px;
+}
+.footer .contacts img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.footer .footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer .footer-bottom .bottom{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #999;
+}
+
+@media screen and (max-width: 1200px){
+    .footer .contacts h3, .footer .contacts p {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footer .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .footer-section {
+        min-width: 100%;
+    }
+    .footer .contacts h3, .footer .contacts p {
+        text-align: center;
+    }
+}

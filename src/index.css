@@ -2,6 +2,7 @@
 @import './cansultation/cansultation.css';
 @import './clients/clients.css';
 @import './articles/articles.css';
+@import './footer/footer.css';
 
 body {
     font-family: sans-serif;

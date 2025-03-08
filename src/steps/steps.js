@@ -13,6 +13,7 @@ import arrow from '../image/Arrow 1.svg';
 export function Steps() {
     return (
         <section className="etapiRaboti">
+            
             <div className="wrapper">
                 <h1> Этапы работы </h1>
                 <div className="circle-box">
